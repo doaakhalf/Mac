@@ -17,11 +17,34 @@ Route::get('/clear', function() {
     Artisan::call('config:cache');
 });
 
+// Route::get('/', function () {
+//     // app(Nexmo\Client::class);
+
+//     return view('dashboard.home.index');
+// });
+
+
 Route::get('/', function () {
     // app(Nexmo\Client::class);
 
-    return view('dashboard.home.index');
+    return view('website.content');
 });
+
+ 
+
+Route::get('/about', function () {
+    // app(Nexmo\Client::class);
+
+    return view('website.about');
+});
+
+
+
+
+
+
+
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
