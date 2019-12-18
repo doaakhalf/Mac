@@ -30,3 +30,5 @@ Auth::routes();
 
 Route::get('/verify', 'VerifyController@getVerify')->name('getVerify');
 Route::post('/verify', 'VerifyController@postVerify')->name('verify');
+
+?>
