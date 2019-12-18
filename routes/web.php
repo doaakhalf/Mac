@@ -30,7 +30,7 @@ Route::get('/', function () {
     return view('website.content');
 });
 
- 
+
 
 Route::get('/about', function () {
     // app(Nexmo\Client::class);
@@ -54,4 +54,4 @@ Auth::routes();
 Route::get('/verify', 'VerifyController@getVerify')->name('getVerify');
 Route::post('/verify', 'VerifyController@postVerify')->name('verify');
 
-?>
+
