@@ -38,6 +38,12 @@ Route::get('/about', function () {
     return view('website.about');
 });
 
+Route::get('/mfact', function () {
+    // app(Nexmo\Client::class);
+
+    return view('website.mfact');
+});
+
 
 
 
